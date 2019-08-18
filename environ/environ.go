@@ -7,7 +7,7 @@ import (
 	"go.uber.org/zap"
 )
 
-var log = logger.MustGetLogger("go24/env", zap.InfoLevel).Sugar()
+var log = logger.MustGetLogger("mimir-go/environ", zap.InfoLevel).Sugar()
 
 // Get gets environment variable with default value.
 func Get(key, defaultValue string) string {
